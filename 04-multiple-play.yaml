@@ -1,0 +1,15 @@
+- name: PLAY1
+  hosts: local
+  connection: local
+  tasks:
+    - name: PALY1 and TASK1
+      debug:
+        msg: "Helow from PLAY1 and TASK1"
+    
+- name: PLAY2
+  hosts: local
+  connection: local
+  tasks:
+    - name: PALY2 and TASK2
+      debug:
+        msg: "Helow from PLAY2 and TASK2"
