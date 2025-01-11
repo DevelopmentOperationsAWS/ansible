@@ -13,6 +13,5 @@
       msg: "Cousre is {{course}} and the duration is {{ duration }} and trainer is {{ trainer}}"
 
   - name: print the variables
-  vars:
-  debug:
-    msg: "Cousre is {{course}} and the duration is {{ duration }} and trainer is {{ trainer}}"
+    debug:
+      msg: "Cousre is {{course}} and the duration is {{ duration }} and trainer is {{ trainer}}"
