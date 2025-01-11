@@ -1,7 +1,11 @@
 - name: variables
   hosts: local
   connection: local
+  vars:
+    course: "Devops and AWS"
+    duration: 120Hrs
+    trainer: Siavkumar
   tasks:
   - name: print the variables
     debug:
-      msg: "Cousre is devops and the duration is 120Hrs"
+      msg: "Cousre is {{course}} and the duration is {{ duration }} and trainer is {{ trainer}}}"
