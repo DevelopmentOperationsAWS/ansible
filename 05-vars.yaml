@@ -1,0 +1,7 @@
+name: variables
+hosts: local
+Connection: local
+tasks:
+- name: print the variables
+  debug:
+    msg: "Cousre is devops and the duration is 120Hrs"
