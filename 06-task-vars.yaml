@@ -1,0 +1,17 @@
+- name: variables
+  hosts: local
+  connection: local
+  vars: # play level variables, global variables
+    course: "Devops and AWS"
+    duration: 120Hrs
+    trainer: Siavkumar
+  tasks:
+  - name: print the variables
+    vars: # Task varaiables, accesisble only in this task
+      course: "Ansible"
+    debug:
+      msg: "Cousre is {{course}} and the duration is {{ duration }} and trainer is {{ trainer}}"
+
+  - name: print the variables
+    debug:
+      msg: "Cousre is {{course}} and the duration is {{ duration }} and trainer is {{ trainer}}"

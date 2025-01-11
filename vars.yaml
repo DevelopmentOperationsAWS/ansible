@@ -1,3 +1,4 @@
-course: "Devops with AWS"
-duration: 120Hrs
-trainer: Siavkumar
+# course: "Devops with AWS"
+# duration: 120Hrs
+# trainer: Siavkumar
+greet: "File level variables"

@@ -1,0 +1,17 @@
+- name: variables and files
+  hosts: local
+  connection: local
+  vars: #Play level variables
+    greet: "From Play level"
+  vars_files:
+  - vars.yaml
+  vars_prompt:
+  - name: greet
+    prompt: "Please enter the prompt greeting message"
+    private: no
+  tasks:
+  - name: print course information
+    vars: #Task level variables
+      greet: "From Task level"
+    debug:
+      msg: "Hello from {{ greet }}"
