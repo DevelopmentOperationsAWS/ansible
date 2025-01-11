@@ -4,7 +4,7 @@
   vars:
     course_name: "DevOps with AWS" #string
     duration: 120 #number
-    Topics: # lists
+    Topics: # lists, []
     - linux
     - aws
     - docker
@@ -12,7 +12,7 @@
     - jenkins
     - ansible
     live: true #booleans
-    tools: #map
+    tools: #map, {}
       ci: jenkins
       cloud: aws
       containarization: docker
