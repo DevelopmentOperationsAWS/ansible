@@ -5,10 +5,10 @@
     greet: "From Play level"
   # vars_files:
   # - vars.yaml
-  vars_prompt:
-  - name: greet
-    prompt: "Please enter the prompt greeting message"
-    private: no
+  # vars_prompt:
+  # - name: greet
+  #   prompt: "Please enter the prompt greeting message"
+  #   private: no
   tasks:
   - name: print course information
     # vars: #Task level variables
@@ -19,3 +19,4 @@
 #1. command line or args
 #2. Task level
 #3. File level
+#4. Prompt
