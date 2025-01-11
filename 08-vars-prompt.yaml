@@ -1,0 +1,17 @@
+- name: varailables and prompt
+  hosts: local
+  connection: local
+  vars_prompt:
+    - name: course
+      prompt: "Please Enter course name"
+      private: no
+    - name: duration
+      prompt: "please Enter duration"
+      private: no
+    - name: trainer
+      prompt: "Please Enter trainer name"
+      private: no
+  tasks:
+    - name: print name and age
+      debug:
+        msg: "Course is {{ course }} and the duration is {{ duration }} and the trainer is {{ trainer }}."
