@@ -11,7 +11,10 @@
     private: no
   tasks:
   - name: print course information
-    vars: #Task level variables
-      greet: "From Task level"
+    # vars: #Task level variables
+    #   greet: "From Task level"
     debug:
       msg: "Hello from {{ greet }}"
+
+#1. command line or args
+#2. Task level
